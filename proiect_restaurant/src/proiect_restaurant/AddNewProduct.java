@@ -166,6 +166,7 @@ public class AddNewProduct extends javax.swing.JFrame {
         validateFields();
     }//GEN-LAST:event_txtPriceKeyReleased
 
+    
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
         // TODO add your handling code here:
         ArrayList<Category> list = CategoryDao.getAllRecords();

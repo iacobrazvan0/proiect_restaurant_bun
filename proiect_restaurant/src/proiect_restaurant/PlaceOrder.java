@@ -467,7 +467,7 @@ public class PlaceOrder extends javax.swing.JFrame {
         
         //Creating document
         
-        String path = "C:\\Users\\Razvan Iacob\\Documents\\bonuri\\";
+        String path = "C:\\Users\\Dorin\\Documents\\bonuri";
         com.itextpdf.text.Document doc = new com.itextpdf.text.Document();
         try {
             PdfWriter.getInstance(doc, new FileOutputStream(path +""+ billId+".pdf"));

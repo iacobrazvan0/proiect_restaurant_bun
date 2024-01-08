@@ -23,7 +23,7 @@ public class tables {
                     + "status VARCHAR(20))";
             String adminDetails = "insert into users(name,email,mobileNumber,adress,password,status) values('Admin','admin@gmail.com','1234567890','Romania','admin','true')";
             String categoryTable = "create table if not exists category(id int AUTO_INCREMENT primary key,name varchar(200))";
-            String productTable = "create table if not exists product(id int AUTO_INCREMENT primary key, name varchar(200),category varchar(200), price varchar(200))";
+            String productTable = "create table if not exists product(id int AUTO_INCREMENT primary key, name varchar(200),category varchar(200), price varchar(200), cantity int)";
             String billTable = "create table if not exists bill(id int primary key,name varchar(200), mobileNumber varchar(200), email varchar(200), date varchar(50), total varchar(200), createdBy varchar(200))";
 
             DbOperations.setDataOrDelete(userTable, "User Table Created Succesfully");
